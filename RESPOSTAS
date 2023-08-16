@@ -1,0 +1,22 @@
+Case Técnico - Analista de Suporte e CS Júnior
+
+Case 1
+
+Para rastrear a satisfação do cliente e a eficiência da equipe de suporte ao produto, a primeira coisa que faria seria perguntar. Iria coletar dados dos clientes e dos colaboradores da equipe de suporte para identificar quais pontos positivos e negativos foram observados nos atendimentos.
+Coletaria a satisfação do cliente quanto ao tempo de resposta do ticket, ao nível de esclarecimento observado na solução/resposta do atendente responsável e à interação com a plataforma de service desk implementada. Atribuiria uma nota para ranquear a satisfação geral com o atendimento recebido.
+Quanto à equipe de suporte, coletaria a observação do cumprimento do tempo de resposta determinado pela plataforma, a necessidade de auxílio de um colega de equipe para a solução da demanda e a avaliação da satisfação quanto ao uso da plataforma de service desk.
+Além de coletar esses dados da equipe de suporte e dos clientes, coletaria da plataforma a recorrência de demandas do mesmo problema, o tempo de resposta e o horário de abertura dos chamados.
+Após preparar e processar os dados obtidos, buscaria insights quanto à relação entre o tempo de resposta do atendimento e a satisfação geral do cliente. Isso visaria otimizar o tempo geral para entregar a solução ao cliente. Também analisaria a necessidade de ajuda de colegas de equipe, visando aprimorar a capacitação da equipe. Adicionalmente, analisaria a quantidade de demandas da equipe de suporte por horário do dia, a fim de alocar a quantidade necessária de colaboradores.
+Ao fim da análise, compartilharia os insights obtidos com a equipe gestora e buscaria continuar levantando e analisando esses dados de maneira periódica. Isso visaria identificar e agir na redução de possíveis pontos de gargalo no processo de atendimento do cliente.
+
+Case 3
+
+As práticas inovadoras que eu sugeriria para a gestão de acesso à plataforma Dadosfera seriam as seguintes:
+Controle de Acesso Biométrico: Implementar um sistema de controle de acesso biométrico, utilizando dispositivos que possuam suporte a leitores biométricos integrados. Isso permitiria aos usuários autenticar-se de maneira mais segura usando suas características físicas exclusivas, como impressões digitais, reconhecimento facial ou escaneamento de íris.
+Autenticação Contínua: Adotar uma abordagem de autenticação contínua, onde a atividade do usuário é monitorada continuamente, não apenas no momento do login. Utilizar análise comportamental e algoritmos para identificar padrões de comportamento normais e detectar anomalias em tempo real. Isso ajudaria a identificar atividades suspeitas e proteger contra acessos não autorizados após o login inicial.
+
+Case 5
+
+SELECT  id, mail --Seleciona o número de id e e-mail dos usuários da consulta
+FROM users_emails --Tabela onde é armazenada as informações dos usuários que cadastraram um e-mail
+WHERE reg_date >= DATE_SUB(CURRENT_DATE, INTERVAL 30 DAY) --filtra os resultados para exibir apenas as linhas onde a data de cadastro seja igual ou superior a data atual menos 30. CURRENT_DATE retorna a data atual e DATE_SUB subtrai o intervalo de 30 dias da data atual
